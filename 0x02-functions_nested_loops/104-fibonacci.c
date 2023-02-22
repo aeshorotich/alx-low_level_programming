@@ -1,37 +1,26 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ *main - Prints the first 98 Fibonacci numbers, starting with 1 and 2,
+ *       followed by a new line.
  *
- *Return: Always 0 (Success)
+ *Return: Always 0.
  */
 int main(void)
 {
-	int count = 0; /*Number of Fibonacci numbers printed so far */
-	int fib1 = 1; /*First number in sequence */
-	int fib2 = 2; /*Second number in sequence */
-	int next; /*Next number in sequence */
+	int count;
+	unsigned long int fib1 = 1, fib2 = 2, next;
 
-	/*Print the first two Fibonacci numbers */
-	printf("%d, %d", fib1, fib2);
-	count += 2;
+	printf("%lu, %lu", fib1, fib2);
 
-	/*Loop through the sequence until 98 Fibonacci numbers have been printed */
-	while (count < 98)
+	for (count = 2; count < 98; count++)
 	{
-		/*Calculate the next number in the sequence */
 		next = fib1 + fib2;
-
-		/*Print the next Fibonacci number */
-		printf(", %d", next);
-		count++;
-
-		/*Update fib1 and fib2 to continue the sequence */
+		printf(", %lu", next);
 		fib1 = fib2;
 		fib2 = next;
 	}
 
-	/*Print a newline character to end the output */
 	printf("\n");
 
 	return (0);
