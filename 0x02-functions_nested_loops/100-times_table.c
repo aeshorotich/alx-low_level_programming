@@ -24,7 +24,7 @@ void print_times_table(int n)
 				printf("%d", res);
 				if (j < n)
 				{
-					printf(", ");
+					printf(",");
 				}
 			}
 			else if (res < 10)
@@ -32,7 +32,7 @@ void print_times_table(int n)
 				printf("   %d", res);
 				if (j < n)
 				{
-					printf(", ");
+					printf(",");
 				}
 			}
 			else if (res < 100)
@@ -40,7 +40,7 @@ void print_times_table(int n)
 				printf("  %d", res);
 				if (j < n)
 				{
-					printf(", ");
+					printf(",");
 				}
 			}
 			else
@@ -48,7 +48,7 @@ void print_times_table(int n)
 				printf(" %d", res);
 				if (j < n)
 				{
-					printf(", ");
+					printf(",");
 				}
 			}
 		}
