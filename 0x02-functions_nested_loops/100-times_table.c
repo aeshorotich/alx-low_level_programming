@@ -20,13 +20,37 @@ void print_times_table(int n)
 			res = i * j;
 
 			if (j == 0)
+			{
 				printf("%d", res);
+				if (j < n)
+				{
+					printf(", ");
+				}
+			}
 			else if (res < 10)
+			{
 				printf("   %d", res);
+				if (j < n)
+				{
+					printf(", ");
+				}
+			}
 			else if (res < 100)
+			{
 				printf("  %d", res);
+				if (j < n)
+				{
+					printf(", ");
+				}
+			}
 			else
+			{
 				printf(" %d", res);
+				if (j < n)
+				{
+					printf(", ");
+				}
+			}
 		}
 
 		printf("\n");
