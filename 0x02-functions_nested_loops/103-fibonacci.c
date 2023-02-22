@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	int i;
 	long fib1 = 1; /*First number in sequence */
 	long fib2 = 2; /*Second number in sequence */
 	long next; /*Next number in sequence */
