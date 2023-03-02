@@ -1,19 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	int a[5];
-	int *p;
+	int a[5] = { 98, 102, 402, -102, 0 };
 
-	a[2] = 1024;
-	p = &n;
-	* (p + 5) = 98;
-	printf("a[2] = %d\n", a[2]);
+	int *p = &a[0] + 1;
+
+	/*
+	 *Your code goes here
+	 */
+
+	printf("a[2] = %d\n", *(p + 1));
+
 	return (0);
 }
