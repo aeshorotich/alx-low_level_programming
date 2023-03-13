@@ -98,7 +98,7 @@ char **strtow(char *str)
 			string[i][j] = str[s];
 		string[i][j] = '\0';
 	}
-	
+
 	string[i] = NULL;
 	return (string);
 }
