@@ -13,14 +13,14 @@ int wordcount(char *str)
 {
 	int words = 0;
 
-	while (* str != '\0')
+	while (*str != '\0')
 	{
 		/*skip spaces*/
 		if (*str == ' ')
 			str++;
 		else
 		{ /*count words*/
-			while (* str != ' ' && * str != '\0')
+			while (*str != ' ' && *str != '\0')
 				str++;
 			words++;
 		}
@@ -65,7 +65,7 @@ char **strtow(char *str)
 	int i, s, j, str_l, word;
 	char **string;
 
-	if (str == NULL || * str == '\0')
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	str_l = wordcount(str);
@@ -98,7 +98,7 @@ char **strtow(char *str)
 			string[i][j] = str[s];
 		string[i][j] = '\0';
 	}
-
+	
 	string[i] = NULL;
 	return (string);
 }
